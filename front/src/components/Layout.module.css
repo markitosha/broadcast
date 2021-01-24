@@ -1,0 +1,56 @@
+.Layout {
+    padding: 23px;
+}
+
+.Ballerina {
+    display: none;
+}
+
+.Clock {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .Layout {
+        padding: 40px 80px;
+    }
+
+    .Ballerina {
+        display: block;
+        background: no-repeat url("../img/ballerina.png");
+        background-size: contain;
+        position: absolute;
+        top: 184px;
+        right: 40px;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .Clock {
+        display: block;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        /*overflow: hidden;*/
+        background: no-repeat url("../img/clock.png");
+        /*width: 1080px;*/
+        /*height: 699px;*/
+        width: 75vw;
+        height: 50vw;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1281px) {
+    .Layout {
+        padding: 40px 120px;
+    }
+
+    .Clock {
+        /*width: 1455px;*/
+        /*height: 795px;*/
+        /*top: 285px;*/
+        /*right: 0;*/
+    }
+}

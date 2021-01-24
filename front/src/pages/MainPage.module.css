@@ -1,0 +1,52 @@
+.Column {
+    width: 100%;
+}
+
+.TextBlock {
+    margin-left: 23px;
+}
+
+.StartPage {
+    width: 100%;
+    height: calc((100vw - 23px) / 2);
+    background: linear-gradient(180deg, rgba(0, 14, 53, 0.5) 0%, rgba(0, 5, 25, 0.5) 100%), url('../img/font.jpeg') no-repeat center / cover;
+    border: 1px solid #D09D38;
+    box-sizing: border-box;
+    border-radius: 17px;
+    padding: 10%;
+}
+
+.Link {
+    color: #D09D38;
+    cursor: pointer;
+}
+
+.Link:hover {
+    color: #BF9034;
+}
+
+@media (min-width: 768px) {
+    .Block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Column {
+        width: 50%;
+    }
+
+    .ColumnSecond {
+        width: 45%;
+    }
+
+    .StartPage {
+        width: 100%;
+        height: calc((45vw - 40px) / 1.8);
+        background: linear-gradient(180deg, rgba(0, 14, 53, 0.5) 0%, rgba(0, 5, 25, 0.5) 100%), url('../img/font.jpeg') no-repeat center / cover;
+        border: 1px solid #D09D38;
+        box-sizing: border-box;
+        border-radius: 17px;
+        padding: 10%;
+    }
+}

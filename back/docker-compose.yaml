@@ -1,0 +1,18 @@
+version: '3.5'
+services:
+  backend:
+    image: broadcast_django
+    command: python manage.py runserver 0.0.0.0:5000
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"
+    depends_on:
+      - migration
+
+  migration:
+    build: .
+    image: broadcast_django
+    command: python manage.py migrate --noinput
+    volumes:
+      - .:/code
